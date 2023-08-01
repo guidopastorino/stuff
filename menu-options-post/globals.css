@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+}
+
+.showMenu {
+    animation-name: showMenu;
+    animation-duration: .150s;
+    animation-iteration-count: 1;
+}
+
+.hideMenu {
+    animation-name: hideMenu;
+    animation-duration: .150s;
+    animation-iteration-count: 1;
+}
+
+@keyframes showMenu {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes hideMenu {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
